@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Android1Project</string>
+    <string name="greeting">Hello Vasya!</string>
+    <string name="user_name">Vasya</string>
+    <string name="morning">Good Morning</string>
+    <string name="day">Good Day</string>
+    <string name="evening">Good Evening</string>
+    <string name="night">Good Night</string>
 </resources>
