@@ -7,20 +7,22 @@
     tools:context="android1.android1project.MainActivity">
 
     <TextView
-        android:id="@+id/greeting"
+        android:id="@+id/weather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/greeting"
-        />
-    
+        android:text=
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
+        android:id="@+id/button"
+        android:onClick="refreshButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5px"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="50dp"
-        />
+
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
