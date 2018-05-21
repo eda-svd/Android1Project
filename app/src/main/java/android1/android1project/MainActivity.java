@@ -1,6 +1,7 @@
 package android1.android1project;
 
 import android.content.res.Resources;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,21 +17,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView weather = (TextView)  findViewById(R.id.weather);
-        weather.setText(currentWeather());
+
     }
 
     public void refreshButton(View view){
-        TextView weather = (TextView)  findViewById(R.id.weather);
-        weather.setText(currentWeather());
+        ConstraintLayout background = (ConstraintLayout) findViewById(R.id.background);
     }
 
+
+
     private String currentWeather(){
-        int currentHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
         Resources resources = getResources();
         String username = resources.getString(R.string.user_name);
+
+        return username +"\n"+ "Текущая температура:" + tValue() +"°";
+    }
+    private int tValue(){
         Random rnd = new Random(System.currentTimeMillis());
         int temperature = -68 + rnd.nextInt(128);
-        return username +"\n"+ "Текущая температура:" + temperature +"градусов";
+        return temperature;
     }
 }
