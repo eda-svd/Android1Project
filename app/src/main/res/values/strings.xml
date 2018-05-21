@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Android1Project</string>
     <string name="user_name">Hi, Vasya!</string>
-    <string name="currentWeather">cold</string>
+    <string name="get_weather">Press for current weather</string>
     <string name="button">Press Me!</string>
     <string name="high">high</string>
     <string name="mid">mid</string>
