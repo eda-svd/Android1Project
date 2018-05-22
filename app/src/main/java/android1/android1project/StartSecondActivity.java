@@ -3,6 +3,7 @@ package android1.android1project;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.view.View;
 import android.widget.EditText;
 
@@ -16,8 +17,10 @@ public class StartSecondActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        EditText input = sourceActivity.findViewById(R.id.editText1);
+
+        EditText input = sourceActivity.findViewById(R.id.editText);
         Intent intent = new Intent(sourceActivity, SecondActivity.class);
+
         intent.putExtra(TEXT,input.getText().toString());
         sourceActivity.startActivity(intent);
     }
