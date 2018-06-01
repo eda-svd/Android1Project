@@ -14,11 +14,6 @@
         <item name="android:typeface">monospace</item>
     </style>
 
-    <style name="Button1" parent="StandartMargins">
-        <item name="app:layout_constraintEnd_toEndOf">parent</item>
-        <item name="app:layout_constraintTop_toTopOf">parent</item>
-    </style>
-
     <style name="StandartMargins" parent="PrimaryText">
         <item name="android:layout_margin">8dp</item>
     </style>

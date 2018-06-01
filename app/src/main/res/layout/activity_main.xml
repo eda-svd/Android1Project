@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent" 
     android:layout_height="match_parent"
     android:id="@+id/background"
     android:background="@drawable/background"
     tools:context="android1.android1project.MainActivity">
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="102dp"
-        android:layout_height="51dp"
-        android:theme="@style/Button1"
-        android:text="@string/get_weather"/>
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="218dp"
-        android:layout_height="51dp"
-        android:theme="@style/PrimaryText"
-        android:inputType="textPersonName"
-        android:hint="@string/hint_main"
-        app:layout_constraintEnd_toStartOf="@+id/button1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <fragment
+        android:id="@+id/fragment"
+        android:name="android1.android1project.Fragment1"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment2"
+        android:layout_weight="1"
+        android:name="android1.android1project.Fragment2"/>
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
+

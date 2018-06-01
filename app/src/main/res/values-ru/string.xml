@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="get_weather">Узнать погоду</string>
+    <string name="hint_main">Введите город</string>
+    <string name="app_name">Погода</string>
+    <string-array name="cities">
+        <item>Санкт-Петербург</item>
+        <item>Москва</item>
+        <item>Норильск</item>
+        <item>Соликамск</item>
+        <item>Артем</item>
+        <item>Новосибирск</item>
+        <item>Советск</item>
+        <item>Ируктск</item>
+    </string-array>
+</resources>
