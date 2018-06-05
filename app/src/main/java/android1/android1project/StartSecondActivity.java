@@ -1,3 +1,4 @@
+/*
 package android1.android1project;
 
 
@@ -25,3 +26,4 @@ public class StartSecondActivity implements View.OnClickListener {
         sourceActivity.startActivity(intent);
     }
 }
+*/

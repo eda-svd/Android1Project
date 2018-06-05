@@ -3,6 +3,7 @@
     <string name="get_weather">Узнать погоду</string>
     <string name="hint_main">Введите город</string>
     <string name="app_name">Погода</string>
+    <string name="empty_city">Введите город</string>
     <string-array name="cities">
         <item>Санкт-Петербург</item>
         <item>Москва</item>

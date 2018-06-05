@@ -3,6 +3,7 @@
     <string name="app_name">Weather Project</string>
     <string name="get_weather">Press for weather</string>
     <string name="hint_main">Your city</string>
+    <string name="empty_city">Type your city</string>
     <string-array name="cities">
         <item>Saint-Petersburg</item>
         <item>Moscow</item>

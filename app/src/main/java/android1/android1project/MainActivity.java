@@ -17,7 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final EditText text = findViewById(R.id.editText);
+
+
+
+
+/*        final EditText text = findViewById(R.id.editText);
         Button button = findViewById(R.id.button1);
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -25,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if ("".equals(text.getText().toString().trim())){
-                    Toast.makeText(MainActivity.this, "Type your city",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, R.string.empty_city,Toast.LENGTH_SHORT).show();
                 }else {
 
                     Intent intent = new Intent(MainActivity.this, SecondActivity.class);
@@ -33,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                     MainActivity.this.startActivity(intent);
                 }
             }
-        });
+        });*/
 
     }
 }

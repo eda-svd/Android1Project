@@ -1,3 +1,4 @@
+/*
 package android1.android1project;
 
 import android.os.Bundle;
@@ -16,3 +17,4 @@ public class Fragment2 extends Fragment {
         return rootView;
     }
 }
+*/
