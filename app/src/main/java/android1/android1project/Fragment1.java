@@ -28,10 +28,11 @@ public class Fragment1 extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
         currentParcel=new Parcel(position);
         String s = "text";
+
         Toast.makeText(getContext(),String.valueOf(currentParcel.getPosition()),Toast.LENGTH_SHORT).show();
         Intent intent = new Intent();
         intent.setClass(getActivity(),WeatherActivity.class);
-        intent.putExtra("city",position);
+        intent.putExtra("city2",currentParcel.getPosition());
         startActivity(intent);
     }
 

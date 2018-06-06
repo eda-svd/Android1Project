@@ -4,6 +4,7 @@
     <string name="hint_main">Введите город</string>
     <string name="app_name">Погода</string>
     <string name="empty_city">Введите город</string>
+    <string name="position"></string>
     <string-array name="cities">
         <item>Санкт-Петербург</item>
         <item>Москва</item>
