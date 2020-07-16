@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Android1Project</string>
-    <string name="user_name">Hi, Vasya!</string>
-    <string name="currentWeather">cold</string>
-    <string name="button">Press Me!</string>
-
-</resources>

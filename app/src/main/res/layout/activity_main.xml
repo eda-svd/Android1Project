@@ -1,41 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context="android1.android1project.MainActivity">
+<!-- это макет для книжной ориентации -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/weather"
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment android:name="android1.android1project.Fragment1"
+            android:id="@+id/cities"
+            android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>
+
+
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+
+    <fragment android:name="android1.android1project.Fragment1"
+        android:id="@+id/cities"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/currentWeather"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryBright"
-        android:textColorHighlight="@color/colorPrimaryDark"
-        android:textSize="@dimen/simpleText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="100dp"
+    &lt;!&ndash;
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:theme="@style/PrimaryText"
+        android:inputType="textPersonName"
+        android:layout_weight="2"
+        android:hint="@string/hint_main" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:text="@string/get_weather"/>
 
-        android:background="@color/colorPrimary"
-        android:onClick="refreshButton"
-        android:text="@string/button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+&ndash;&gt;
 
+</LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+-->

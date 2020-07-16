@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather Project</string>
+    <string name="get_weather">Press for weather</string>
+    <string name="hint_main">Your city</string>
+    <string name="empty_city">Type your city</string>
+    <string-array name="cities">
+        <item>Saint-Petersburg</item>
+        <item>Moscow</item>
+        <item>Norilsk</item>
+        <item>Solikamsk</item>
+        <item>Artem</item>
+        <item>Novosibirsk</item>
+        <item>Sovetsk</item>
+        <item>Irkutsk</item>
+    </string-array>
+</resources>
